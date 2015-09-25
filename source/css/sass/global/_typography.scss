@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+p{
+  clear: both;
+  margin: 10px 0;}
+
+.large{font-size: 2em;}
+
+a{transition: all 0.3s ease;}
+
+a:hover{color: #f89797}
+
+h1{
+  font: normal 400 15px/18px $font-family-serif;
+  margin: 10px 0;
+  }
+
+h2{
+  font: italic 400 20px/24px "minion-pro", Helvetica, sans-serif;
+  margin-left: -15px;
+  color: $gray;
+  }
+
+h3{
+  font: normal 400 16px/24px $font-family-sans-serif;
+  color: $gray;
+  margin-right: 20px;
+  }
+
+strong{font-weight: 500;}

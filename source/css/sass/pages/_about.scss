@@ -1,0 +1,44 @@
+.about {
+
+
+/* ==========================================================================
+   About page
+   ========================================================================== */
+
+
+ul {font-size: 15px;}
+section p{margin-bottom: 20px;}
+section p em {font-weight: 300;}
+section a{color: $brand-primary;}
+section a:hover{color: $gray}
+section h3 {clear:both;margin: 20px 0 0 0}
+
+  .wave{margin-top: -5px;}
+
+  ul#skills{
+    clear: both;
+    margin: 10px 0 10px -30px;
+    }
+
+    ul#skills li{
+      clear:both;
+      float: left;
+      list-style:none;
+      padding: 5px 0;
+      }
+
+      ul#skills li .right{text-align:right;}
+
+      ul#skills li span.level{
+        background: $brand-primary;
+        background: linear-gradient(to left, $brand-primary 0%, #FCE0DE 100%) repeat;
+        color: #fff;
+        text-indent:-999em;
+        }
+
+    .experience{display: none;}
+
+
+}
+
+

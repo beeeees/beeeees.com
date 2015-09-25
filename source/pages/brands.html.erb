@@ -1,0 +1,30 @@
+---
+pageTitle: Our Brands &amp; Products
+bodyClass: brands
+layoutClass: layout-two-col
+headerText: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis arcu in massa iaculis, ac hendrerit dolor varius. Mauris quis purus vitae nisl commodo aliquam in vitae magna.
+---
+
+<% brands = BRANDS %>
+
+<section class="full-width white" id="content">
+  <div class="container content-offset">
+    <div class="row flex">
+      <% brands.each_with_index do |brand, index| %>
+        <div class="col-sm-6 bucket">
+          <div class="padding">
+            <h3><%= brand[:name] %></h3>
+            <p><%= brand[:excerpt] %></p>
+          </div>
+          <a href="/brands/<%= brand[:link] %>.html" class="btn btn-default">Learn More</a>
+        </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-md-10 centered pre-footer">
+        <h3>Questions or Comments?</h3>
+        <a href="#" class="btn btn-primary">Contact Valtris</a>
+      </div>
+    </div>
+  </div>
+</section>
