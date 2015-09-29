@@ -32,9 +32,6 @@ end
 ###
 # Helpers
 ###
-def nav_active(path)
-  current_page.path == path ? {:class => "active"} : {}
-end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -48,9 +45,6 @@ activate :livereload
 #     "Helping"
 #   end
 # end
-
-
-require 'source/content/projects'
 
 set :css_dir, 'css'
 set :js_dir, 'js'
@@ -70,6 +64,10 @@ configure :build do
 
   # Enable cache buster
   # activate :asset_hash
+  #
+  #
+  ignore 'dt-bethany'
+  ignore 'Mobile email'
 
   # Use relative URLs
   activate :relative_assets
