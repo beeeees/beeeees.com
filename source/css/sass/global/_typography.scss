@@ -8,9 +8,11 @@ p{
 
 .large{font-size: 2em;}
 
-a{transition: all 0.3s ease;}
+a{ transition: all 0.3s ease;}
 
-a:hover{color: #f89797}
+a:hover{
+  color: $brand-primary;
+}
 
 h1{
   font: normal 400 15px/18px $font-family-serif;
@@ -30,3 +32,7 @@ h3{
   }
 
 strong{font-weight: 500;}
+
+.pink {
+  color: $brand-primary;
+}
