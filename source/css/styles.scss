@@ -50,6 +50,10 @@ $bootstrap-sass-asset-helper: false;
 @import "sass/global/layout";
 @import "sass/global/components";
 
+
+@import "sass/partials/nav";
+
 @import "sass/pages/home";
+@import "sass/pages/about";
 
 

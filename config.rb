@@ -32,6 +32,9 @@ end
 ###
 # Helpers
 ###
+def nav_active(path)
+  current_page.path == path ? {:class => "active"} : {}
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes

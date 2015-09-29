@@ -1,7 +1,11 @@
  <nav>
   <li><%= link_to "<span class='pink'>bethany brown</span><br /> front end web developer", '/', class: '' %></li>
-  <li><%= link_to "about", 'about.html', class: '' %></li>
-  <li><%= link_to "contact", 'mailto:bethany.brown.email@gmail.com', class: '' %></li>
+  <% if current_page.data.bodyClass == 'about' %>
+    <li><%= link_to "about", 'about.html', class: 'active' %></li>
+  <% else %>
+    <li><%= link_to "about", 'about.html' %></li>
+  <% end %>
+  <li><%= link_to "contact", 'mailto:bethany.brown.email@gmail.com' %></li>
   <li>
     <ul class="socialstuff">
       <li><%= link_to "", 'http://linkedin.com/pub/bethany-brown/7b/173/b', class: 'icon-linkedin-squared' %></li>
