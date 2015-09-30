@@ -24,4 +24,6 @@ resume2.pdf
 /.cache
 
 # Ignore .DS_store file
+=======
+.htaccess
 .DS_Store
