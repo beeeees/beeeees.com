@@ -8,21 +8,18 @@
 
     <!-- Thanks for looking! Make sure you take a look at the Github repo to see the behind the scenes of how I coded this site using Middleman, Bootstrap and SASS! https://github.com/beeeees/beeeees.com -->
     <%= stylesheet_link_tag "styles.css" %>
+    <%= stylesheet_link_tag "fonts/css/fontello.css" %>
     <link rel="shortcut icon" href="assets/images/favicon.ico">
 
     <script type="text/javascript" src="//use.typekit.net/bco7jou.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <!--[if lt IE 9]>
-      <script src="assets/js/html5shiv.js"></script>
-      <script src="assets/js/respond.min.js"></script>
+      <script src="js/vendor/html5shiv.js"></script>
     <![endif]-->
   </head>
   <body class="<%= current_page.data.bodyClass %>">
 
     <%= yield %>
-
-    <%= javascript_include_tag  "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" %>
-    <%= javascript_include_tag  "all" %>
 
     <script type="text/javascript">
 

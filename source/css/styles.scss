@@ -1,6 +1,5 @@
 $bootstrap-sass-asset-helper: false;
 @import "bootstrap/bootstrap";
-@import "../fonts/fontello/css/fontello.css";
 
 @mixin xs-max {
   @media (max-width: #{$screen-xs-max}) {
