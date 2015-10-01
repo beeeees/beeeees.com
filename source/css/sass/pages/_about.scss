@@ -7,25 +7,19 @@
 
 ul {font-size: 15px;}
 
-p { margin-bottom: 20px;}
-
-p em { font-weight: 300;}
-
-a { color: $brand-primary;}
-
-a:hover{ color: $gray}
-
-h3 {
-  clear:both;
-  margin: 20px 0 0 0;
+p {
+  margin-bottom: 20px;
+  em { font: italic 400 14px/16px $font-family-serif; color: #888; }
+  a { color: $brand-primary;}
+  a:hover{ color: $gray}
 }
-
+h4 { font-size:18px; }
 .wave{margin-top: -5px;}
 
 #resume {
-  margin-top: 60px;
+  margin-top: 30px;
   h1 {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -36,13 +30,15 @@ h3 {
 
 .role.visible {
 	background: white;
-  margin: 20px 0;
+  margin:  0 0 20px 0;
   opacity: 1;
+  h4 { margin-bottom: 0px;}
+  p { margin-top: 0; }
 	&:nth-of-type(1) {
   @include transition(opacity 0.25s 0.5s ease-in);
 	}
   &:nth-of-type(2) {
-    @include transition(opacity 0.25s 1s ease-in);   
+    @include transition(opacity 0.25s 1s ease-in);
   }
   &:nth-of-type(3) {
     @include transition(opacity 0.25s 1.5s ease-in);

@@ -1,16 +1,12 @@
 
-
 body {
   padding-top: 50px;
-  font: normal 400 16px/21px $font-family-sans-serif;
   color: $gray;
-  }
+}
 
 /* ==========================================================================
    Helper Classes
    ========================================================================== */
-
-.white-bg {background: #fff;}
 
 .centered { text-align: center; margin: 0 auto; float: none;}
 
@@ -19,43 +15,10 @@ body {
   float: left;
 }
 
-@include small{
-  .container-padding {
-    padding: 0 5%;
-  }
-}
-.vcentered {
-  position: relative;
-  top: 50%;
-  @include transform(translate(0,-50%));
-}
-@include medium {
-  .vcentered-sm {
-    position: relative;
-    top: 50%;
-    @include transform(translate(0,-50%));
-  }
-}
-
-.no-padding {
-  padding: 0;
-}
-.hidden { display: none; }
-
-.img-responsive.max { width: 100%;}
-
 img.rounded {
   border-radius: 50%;
 }
 
-.flex {
-  display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-}
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -65,14 +28,6 @@ img.rounded {
     margin: 0;
   }
 }
-@include small {
-  .break-sm {
-    display: block;
-  }
-}
-@include xs {
-  .break {display: block; }
-  }
 
 @media (min-width: 1400px) {
   .container {
@@ -83,26 +38,3 @@ img.rounded {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-@media (max-width: 479px) {
-  #skills{display:none;}
-  .experience{display: inline !important;}
-
-}
-
-@media (max-width: 767px) {
-
-
-  .col {
-    clear: both;
-    height: 200px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    }
-
-  .img, .overlay{height: 200px !important;}
-
-  .about .col {height: auto !important;}
-
-}
-

@@ -10,18 +10,22 @@ nav {
   li {
     display: block;
     padding: 5px 0 5px 0px;
-    @include xs-max {
-      display: inline;
-      padding: 0 5px;
-    }
+      font: normal 400 14px/22px $font-family-serif;
+
     a{
-      font: normal 400 14px/18px $font-family-serif;
       color: $gray;
       &:hover, &:focus, &.active {
         color: #f89797;
         background: none;
         text-decoration: none;
       }
+    }
+  }
+   @include xs-max {
+    margin-left: 0;
+    li {
+      display: inline-block;
+      padding: 0 5px;
     }
   }
 }

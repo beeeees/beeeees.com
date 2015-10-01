@@ -3,29 +3,15 @@
     elements: {},
     selectors: {
       body: 'body',
-
-    },
-
-    _bindVendors: function(){
-    var self = this;
-
+      effect: '.role',
     },
 
     _bindEvents: function() {
       var self = this;
-      var sections;
-      var windowScrollTop = $(window).scrollTop();
 
-      $(window).on('resize', function(){  // on window resize
-
+      $(window).on('scroll', function(){ //on scroll
+        self.animation();
        });
-
-      $(window).on('scroll', function(y){ //on scroll
-
-       });
-
-      $('.role').addClass('visible');
-
     },
 
     _getElements: function(){
@@ -36,11 +22,23 @@
       this.elements.window = $(window);
     },
 
+    animation: function(){
+      //Animation classes are triggered at certain scroll points
+      var self = this;
+      var scrollTop = self.elements.window.scrollTop();
+      var windowHeight = self.elements.window.height();
+      var effectOffset = self.elements.effect.offset().top;
+      var difference = effectOffset - windowHeight;
+      if( scrollTop > difference ) {
+        self.elements.effect.addClass('visible');
+      }
+
+    },
 
     initialize: function(){
       this._getElements();
-      this._bindVendors();
       this._bindEvents();
+      this.animation();
 
     }
   }; // MainScripts

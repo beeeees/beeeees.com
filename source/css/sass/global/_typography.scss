@@ -5,6 +5,7 @@
 p {
   clear: both;
   margin: 10px 0;
+  font: normal 400 18px/22px $font-family-sans-serif;
 }
 
 a {
@@ -26,9 +27,15 @@ h2 {
 }
 
 h3 {
+  font: normal 400 20px/24px $font-family-serif;
+  color: $brand-primary;
+  margin: 50px 0 25px 0;
+}
+
+h4 {
   font: normal 400 16px/24px $font-family-sans-serif;
   color: $gray;
-  margin-right: 20px;
+  &.margin { margin-right: 25px; }
 }
 
 strong { font-weight: 500; }
