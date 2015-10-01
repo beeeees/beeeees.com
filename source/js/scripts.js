@@ -24,6 +24,8 @@
 
        });
 
+      $('.role').addClass('visible');
+
     },
 
     _getElements: function(){
