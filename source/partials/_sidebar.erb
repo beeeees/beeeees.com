@@ -1,8 +1,9 @@
  <nav>
-  <li><%= link_to "<span class='pink'>bethany brown</span><br /> <span class='hidden-xs'>front end web developer</span>", '/', class: '' %></li>
   <% if current_page.data.bodyClass == 'about' %>
+  <li><%= link_to "bethany brown<br /> <span class='hidden-xs'>front end web developer</span>", '/', class: '' %></li>
     <li><%= link_to "about", 'about.html', class: 'active' %></li>
   <% else %>
+    <li><%= link_to "bethany brown<br /> <span class='hidden-xs'>front end web developer</span>", '/', class: 'active' %></li>
     <li><%= link_to "about", 'about.html' %></li>
   <% end %>
   <li><%= link_to "contact", 'mailto:bethany.brown.email@gmail.com' %></li>
@@ -15,15 +16,3 @@
     </ul> -->
   </li>
 </nav>
-
-<p>take a look at my <a href="http://github.com/beeeees" target="_blank">github</a> profile to see the code for this site, as well as several other plugins and boilerplates:
-<ul>
-<li><a href="https://github.com/beeeees/header-fade-plugin/blob/master/fullheight.js" target="_blank">jquery full height plugin</a></li>
-<li><a href="https://github.com/beeeees/header-fade-plugin" target="_blank">jquery header fade plugin</a></li>
-<li><a href="https://github.com/beeeees/middleman-boilerplate" target="_blank">middleman boilerplate</a></li>
-<li><a href="https://github.com/beeeees/responsive-email" target="_blank">responsive email template</a></li>
-</ul>
-
-<div id="soundcloud">
-  <p>recently liked on soundcloud:</p>
-</div>

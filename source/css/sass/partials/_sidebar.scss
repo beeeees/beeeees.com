@@ -3,20 +3,10 @@
    Sidebar
    ========================================================================== */
 
-aside {
-
-  padding-left: 20px;
-}
-aside ul {
-  padding-left: 20px;
-  li a {
-    font: normal 400 14px/22px $font-family-serif;
-  }
-}
 nav {
   text-align:left;
   list-style:none;
-  margin: 25px 0 0;
+  margin: 25px 0 40px 0;
   li {
     display: block;
     padding: 5px 0 5px 0px;
@@ -57,7 +47,8 @@ ul.socialstuff {
   @include xs-max { display: none; }
 }
 
-aside p {
-  font: normal 400 14px/22px $font-family-serif;
-}
+@include xs-max {
+  #sidebar, nav { text-align: center; }
+  .img-responsive { display: inline-block; }
 
+}
