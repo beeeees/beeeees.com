@@ -43,7 +43,7 @@
     initialize: function(){
       this._getElements();
       this._bindEvents();
-      this.animation();]
+      this.animation();
     }
   }; // MainScripts
 
