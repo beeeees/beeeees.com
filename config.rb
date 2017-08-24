@@ -67,7 +67,7 @@ configure :build do
   #
   #
   ignore 'dt-bethany'
-  ignore 'Mobile email'
+  ignore 'mobile-email'
 
   # Use relative URLs
   activate :relative_assets
