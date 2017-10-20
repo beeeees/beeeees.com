@@ -34,8 +34,6 @@ sudo gem install puma -v '2.12.2' -- --with-opt-include=/usr/local/opt/openssl/i
 sudo gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include                     
 ```
 
-
-
 ## Running
 Since we are using Middleman, you need to run the server to view the page. Do do this run:
 
