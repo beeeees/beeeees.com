@@ -27,6 +27,14 @@ $ bundle
 
 This will install all the needed dependencies and gems listed in the `.Gemfile` to get you up and running with Middleman.
 
+If you have OSX Sierra you may need to run additional flags with eventmachine and puma 
+
+```
+sudo gem install puma -v '2.12.2' -- --with-opt-include=/usr/local/opt/openssl/include
+sudo gem install eventmachine -- --with-cppflags=-I/usr/local/opt/openssl/include                     
+```
+
+
 
 ## Running
 Since we are using Middleman, you need to run the server to view the page. Do do this run:
@@ -50,12 +58,14 @@ This will run the Middleman build task and generate all of the necessary files. 
 
 ## Deploying to Heroku
 
-Add the remote to your working copy:
+Master is synced with Heroku automatically the app will build and deploy whenever master is updated :)
+
+~~Add the remote to your working copy:~~
 ```bash
 $ git remote add heroku git@heroku.com:beeeees.git
 ```
 
-Ensure you have the remote added to your working copy:
+Ensure you have the remote added to your working copy:~~
 ```bash
 $ git remote -v
 heroku  git@heroku.com:beeeees.git (fetch)
@@ -63,9 +73,9 @@ heroku  git@heroku.com:beeeees.git (push)
 
 ```
 
-This should output the remotes of the project. One should be called `heroku` and point to the Heroku staging subdomain.
+~~This should output the remotes of the project. One should be called `heroku` and point to the Heroku staging subdomain.~~
 
-Use the following command to push to Heroku:
+~~Use the following command to push to Heroku:~~
 ```bash
 $ git push heroku master
 
